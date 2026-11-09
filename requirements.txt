@@ -1,0 +1,36 @@
+# ============================================================
+# EcoBot — EcoGrid Solutions
+# requirements.txt — Dipendenze del progetto
+# Compatibile con Python 3.10+ (testato su Python 3.12)
+# ============================================================
+
+# ── Core AI / LangChain ────────────────────────────────────
+# IMPORTANTE: vincoliamo la linea 0.3.x.
+# In LangChain 1.x 'AgentExecutor' e 'create_openai_tools_agent'
+# sono stati RIMOSSI da langchain.agents -> il codice non importerebbe.
+# I limiti superiori (<0.4 / <2.0) evitano che un'installazione pulita
+# tiri giu' la major 1.x incompatibile.
+langchain>=0.3.7,<0.4
+langchain-openai>=0.2.9,<0.4
+langchain-core>=0.3.21,<0.4
+openai>=1.50.0,<2.0
+
+# ── Data Science ───────────────────────────────────────────
+# Testato con pandas 3.x e numpy 2.x (compatibile anche con pandas 2.2)
+pandas>=2.2.0
+numpy>=1.26.0
+matplotlib>=3.9.0
+
+# ── Web App ────────────────────────────────────────────────
+# >=1.50: parametro width="stretch" per st.image / st.button
+streamlit>=1.50.0
+
+# ── Utilities ──────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Jupyter (notebook di sviluppo + esegui_notebook.py) ────
+jupyter>=1.1.1
+ipykernel>=6.29.5
+notebook>=7.2.0
+nbformat>=5.9.0
+nbclient>=0.10.0

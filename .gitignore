@@ -1,0 +1,36 @@
+# ── Secrets ────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Local archives (contain secrets / course submissions) ──
+*.zip
+
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ── Jupyter ────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── IDE / tooling ──────────────────────────────────────────
+.idea/
+.vscode/
+.claude/
+
+# ── Runtime output of the Streamlit app ────────────────────
+charts_streamlit/
+
+# ── OS ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Personal notes (not part of the portfolio) ─────────────
+RELAZIONE_PROGETTO.md
+
+# ── Original full-length screenshot (earlier app version) ──
+streamlit_screenshot.png
